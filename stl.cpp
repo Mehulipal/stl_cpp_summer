@@ -258,10 +258,50 @@ void stl()
         cout << "Present";
 }
 
+void pq()
+{
+    priority_queue<int> maxh; //max heap : max element on top
+    priority_queue<int,vector<int>, greater<int>> minh; //min heap : min element on top
+
+    vector<int> v;
+    //elements inserted in random order.
+    v.push_back(5);
+    v.push_back(2);
+    v.push_back(4);
+    v.push_back(1);
+    v.push_back(6);
+    v.push_back(3);
+
+    for(auto num: v)
+    {
+        //num : element in vector
+        maxh.push(num);
+        minh.push(num);
+        // elements inserted into both heaps.
+    }
+
+    // print in ascending order using min heap since it gives min in top.
+    cout<<"Ascending order:"<<endl;
+    while(minh.size()>0)
+    {
+        cout<<minh.top()<<endl;
+        minh.pop(); //forgetting this step results in infinite loop.
+    }
+
+    cout<<"Descending order:"<<endl;
+    // print in descending order using max heap since it gives max in top.
+    while(maxh.size()>0)
+    {
+        cout<<maxh.top()<<endl;
+        maxh.pop(); //forgetting this step results in infinite loop.
+    }
+}
+
 int main()
 {
     //practice();
     //setDemo();
     //mapDemo();
-    stl();
+    // stl();
+    pq();
 }
