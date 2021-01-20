@@ -300,8 +300,13 @@ void pq()
 int main()
 {
     //practice();
+<<<<<<< HEAD
+    //setDemo();
+    mapDemo();
+=======
     setDemo();
    // mapDemo();
+>>>>>>> 4cb1d99b5b081461c7b06dedf98be13ea49d6961
     // stl();
     // pq();
 }
