@@ -11,8 +11,8 @@ void practice ()
     vector<int> A = {11,102,3,14};
     cout << A[1] << " " << *A.begin() << endl;
 
-    int B[] = {11,2,3,14};
-    cout << B[1] << endl; 
+    int B[] = {11,2,6,3,14};
+    cout << B[1] << endl;
 
     sort(A.begin(),A.end());
     //sort(A.end(),A.begin());
@@ -29,7 +29,7 @@ void practice ()
     A.push_back(100);
     A.push_back(100);
 
-    A.push_back(123);
+  //  A.push_back(123);
 
     sort(A.begin(), A.end());
 
@@ -49,7 +49,7 @@ void practice ()
         cout << *it3 << " ";
     }
     cout << endl;
-    
+
     for(int x : A)
     {
         x++;
@@ -63,7 +63,7 @@ void practice ()
         cout << x << " ";
     }
     cout << endl;
-    
+
 
     for(int &x : A)
     {
@@ -115,8 +115,8 @@ void setDemo()
     else
         cout << "Present";
         cout << endl;
-        
-        
+
+
 }
 
 void mapDemo()
@@ -137,7 +137,7 @@ void mapDemo()
 
     map<char,int> D;
     string C = "Heart beats fast colors and promises";
-    
+
     for(int x : C)
     cout << x << " ";
     cout << endl;
@@ -247,7 +247,7 @@ void stl()
     cout << current.first << " " << current.second << endl;
 
     pair<int,int> cur = {100, 200};
-    
+
     cout << cur.first << " " << cur.second << endl;
     A.insert(cur);
 
@@ -300,8 +300,8 @@ void pq()
 int main()
 {
     //practice();
-    //setDemo();
-    mapDemo();
+    setDemo();
+   // mapDemo();
     // stl();
     // pq();
 }
