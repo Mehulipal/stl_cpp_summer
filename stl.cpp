@@ -301,7 +301,7 @@ int main()
 {
     //practice();
     //setDemo();
-    //mapDemo();
+    mapDemo();
     // stl();
     pq();
 }
